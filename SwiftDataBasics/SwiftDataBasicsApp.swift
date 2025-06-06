@@ -11,7 +11,8 @@ import SwiftUI
 struct SwiftDataBasicsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ShoppingListView()
         }
+        .modelContainer(for: ShoppingItem.self)
     }
 }
